@@ -345,3 +345,13 @@ export function removeClass(ele, cls) {
     ele.className = ele.className.replace(reg, ' ')
   }
 }
+
+/**
+ * Has property
+ * @param {object} target
+ * @param {string} property
+ * @returns {boolean}
+ */
+export function hasOwnProperty(target, property) {
+  return Object.prototype.hasOwnProperty.call(target, property)
+}
